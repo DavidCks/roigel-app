@@ -1,7 +1,7 @@
 import Calendar from 'react-calendar';
 import KahnCalendarNavSVG from './KahnCalendarNavSVG';
 
-const KahnCalendar = ({date, setDate, reserved}) => {
+const KahnCalendar = ({date, setDate, reserved, onClick}) => {
 
   const markReserved = ({date, view}) => {
     if(view === 'month') {

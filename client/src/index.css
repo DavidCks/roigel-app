@@ -292,7 +292,7 @@ footer {
   height: 80px;
   background-color: #05E105;
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 13px;
   background: linear-gradient(120deg, rgba(229,230,236,1) 0%, rgba(242,243,246,1) 100%);
   box-shadow: -6px -6px 16px rgb(255, 255, 255), 3px 3px 4px rgb(209, 205, 199);
 }
@@ -380,12 +380,31 @@ p.sub {
 }
 
 .nm-border {
-  border-radius: 20px;
+  border: none;
+  border-radius: 13px;
 }
 
 .std-padding {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.dc-title {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.dc-delete-button {
+  transform: translateY(15px) rotate(45deg);
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+}
+
+.dc-delete-button:active, .dc-delete-button:focus {
+  box-shadow: inset 2px 2px 6px #bebebe,
+              inset -2px -2px 6px #ffffff !important;
 }
 
 .dc {
@@ -569,4 +588,27 @@ abbr {
 .AddButton:focus, .AddButton:active {
   box-shadow: inset 2px 2px 6px #bebebe,
               inset -2px -2px 6px #ffffff !important;
+}
+
+/*User Info*/
+.UserInfo-panel {
+  display: flex;
+  align-items: center;
+  margin-bottom: .5em;
+}
+
+.UserInfo-image {
+  width: 4em;
+  border-radius: 50%;
+}
+
+.UserInfo-name {
+  margin-left: .5em;
+}
+
+/*auth buttons*/
+
+.authbtn {
+  padding: .5em;
+  color: #575F6B;
 }

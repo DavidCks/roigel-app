@@ -5,7 +5,7 @@ const Login = () => {
 
   return (
     <>
-    <button onClick={() => loginWithRedirect()}>Log In</button>
+    <button className="nm-shadow nm-bg nm-border authbtn" onClick={() => loginWithRedirect()}>Einloggen</button>
     </>
   )
 }

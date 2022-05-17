@@ -1,13 +1,14 @@
-import Logout from "../Auth/Logout"
+import Header from "./Header"
+import SeparatorSVG from "../SVGs/SeparatorSVG"
+import UserInfo from "./UserInfo"
 
 const Profile = () => {
   
   return (
     <>
-      <div>
-        Profile
-      </div>
-      <Logout/>
+      <Header heading="Profil"/>
+      <SeparatorSVG />
+      <UserInfo />
     </>
   )
 }

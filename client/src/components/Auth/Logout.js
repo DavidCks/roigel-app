@@ -5,8 +5,8 @@ const Logout = () => {
 
   return (
     <>
-    <button onClick={() => logout({ returnTo: window.location.origin })}>
-      Log Out
+    <button className="nm-shadow nm-bg nm-border authbtn" onClick={() => logout({ returnTo: window.location.origin })}>
+      Ausloggen
     </button>
     </>
   )

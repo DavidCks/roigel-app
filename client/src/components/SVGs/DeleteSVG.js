@@ -3,8 +3,8 @@ const DeleteSVG = () => {
     <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
       <defs>
         <linearGradient id="linear-gradientDeleteSVG" x1="0.585" y1="0.629" x2="0.255" y2="0.051" gradientUnits="objectBoundingBox">
-          <stop offset="0" stop-color="red"/>
-          <stop offset="1" stop-color="#bf0000"/>
+          <stop offset="0" stopColor="red"/>
+          <stop offset="1" stopColor="#bf0000"/>
         </linearGradient>
         <filter id="Vereinigungsmenge_1" x="0" y="0" width="22" height="22" filterUnits="userSpaceOnUse">
           <feOffset dy="1" input="SourceAlpha"/>
