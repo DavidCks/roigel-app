@@ -368,7 +368,7 @@ p.sub {
 }
 
 .nm-shadow {
-  box-shadow: -6px -6px 16px rgb(255, 255, 255), 3px 3px 6px rgb(209, 205, 199);
+  box-shadow: -6px -6px 16px rgb(255, 255, 255), 3px 3px 6px rgb(209, 205, 199) !important;
 }
 
 .nm-shadow-inset {
@@ -376,7 +376,7 @@ p.sub {
 }
 
 .nm-bg {
-  background: linear-gradient(120deg, rgba(229,230,236,1) 0%, rgba(242,243,246,1) 100%);
+  background: linear-gradient(120deg, rgba(229,230,236,1) 0%, rgba(242,243,246,1) 100%) !important;
 }
 
 .nm-border {
@@ -394,6 +394,7 @@ p.sub {
 }
 
 .dc-icon {
+  display: flex;
   color: #575F6B;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -401,6 +402,8 @@ p.sub {
   width: 60px;
   height: 60px;
   border-radius: 100%;
+  justify-content: center;
+  align-items: center;
 }
 .dc-grid {
   display: grid; 
@@ -547,4 +550,23 @@ abbr {
 }
 .list-group_KahnTimePicker {
   overflow-x: hidden !important;
+}
+
+.AddButton {
+  padding-top: 2px;
+  padding-left: 2px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: calc(50% - 2em);
+  margin-right: calc(50% - 2em);
+  border-radius: 50%;
+  width: 4em;
+  height: 4em;
+  border: none;
+  box-shadow: -6px -6px 16px rgb(255, 255, 255), 3px 3px 6px rgb(209, 205, 199);
+}
+
+.AddButton:focus, .AddButton:active {
+  box-shadow: inset 2px 2px 6px #bebebe,
+              inset -2px -2px 6px #ffffff !important;
 }

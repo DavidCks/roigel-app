@@ -1,7 +1,13 @@
-const DualCard = ({ titleText='titleText', Icon1, Icon2, h1, h2, t1, t2 }) => {
+import CalendarSVG from "../SVGs/CalendarSVG"
+import DeleteSVG from "../SVGs/DeleteSVG"
+
+const DualCard = ({ titleText='titleText', Icon1 = CalendarSVG, Icon2 = CalendarSVG, h1 = "", h2 = "", t1 = "", t2 = "", canDelete=false}) => {
   return (
     <>
-      <p style={{marginLeft: '15px'}}>{titleText}</p>
+      <p style={{marginLeft: '15px'}}>
+        <span>{titleText}</span>
+        {canDelete && <DeleteSVG/>}
+      </p>
       <div className="dc nm-shadow nm-bg nm-border std-padding">
         <div className='dc-grid' style={{marginBottom: '-12px'}}>
           <div className="dc-icon nm-shadow-inset">
