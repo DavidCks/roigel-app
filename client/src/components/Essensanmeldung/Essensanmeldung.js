@@ -132,9 +132,9 @@ const Essensanmeldung = () => {
 
   {/* remove after testing */}
   useEffect(()=> {
-    fetch("/api")
+    fetch("/api/essen/1654725600/1655157600")
       .then((res) => res.json())
-      .then((data) => setTestMsg(data.message));
+      .then((data) => setDates(data.response));
   }, [])
 
   const calcDualCardData = () => {
