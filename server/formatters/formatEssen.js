@@ -3,11 +3,12 @@ function formatBlock(dbdataBlock){
   const day = dateRaw.toLocaleString("de-DE", { weekday: "short" });
   const month = dateRaw.toLocaleString("de-DE", { month: "short" });
   const date = dateRaw.toLocaleString("de-DE", { day: "numeric" });
+  const year = dateRaw.toLocaleString("de-DE", { year: "numeric" });
   const selection = dbdataBlock.selection === 'm' ? 'meat' :
                     dbdataBlock.selection === 'v' ? 'vegi' : 'none';
   const extraMeat = dbdataBlock.extraM;
   const extraVegi = dbdataBlock.extraV;
-  return { day, date, month, selection, extraMeat, extraVegi };
+  return { day, date, month, year, selection, extraMeat, extraVegi };
 }
 
 async function formatEssen(dbdata) {

@@ -30,7 +30,7 @@ function dateCalc(dayName, date, month, year) {
   }
   str += ', '
 
-  str += date < 10 && '0'
+  str += date < 10 ? '0' : ''
   str += date + '.'
 
   switch (month) {
