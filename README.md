@@ -23,4 +23,4 @@ Have to reimplement stuff because heroku but here's what I've got so far:
 - [ ] Feed FE & BE implementation
 - [ ] migration to a new hoster (still trying to convince friends to self-host on the shared RPi)
 
-Built using PERN [Postgres, express, react, node]
+Built using __**PERN**__ [Postgres, express, react, node]
