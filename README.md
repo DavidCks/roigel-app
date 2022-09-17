@@ -24,3 +24,5 @@ Have to reimplement stuff because heroku but here's what I've got so far:
 - [ ] migration to a new hoster (still trying to convince friends to self-host on the shared RPi)
 
 Built using __**PERN**__ [Postgres, express, react, node]
+
+Development is going slowly, because I've been busy studying mostly
