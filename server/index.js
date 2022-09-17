@@ -53,6 +53,8 @@ app.get("/api/essen/:dateFrom/:dateTo", (req, res) => {
 
     //execute the query
     const result = await db.query(query);
+    
+    await console.log(result)
 
     //format the data for the frontend
     const response = await formatEssen(result);
